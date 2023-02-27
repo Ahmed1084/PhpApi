@@ -14,7 +14,6 @@ $json = array("{'Title': 'PHP', 'Description': 'Compensation: based on experienc
 //print_r($json);
 
 //print_r($j);
-
 foreach($json as $i){
     extract(json_decode($i));
     echo $Title ;
