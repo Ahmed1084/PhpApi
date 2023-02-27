@@ -13,6 +13,5 @@ foreach (json_decode($data) as $d) {
     else
     $query=$query.",(NULL,'$d->title', '$d->description','$d->duration','$d->location','$d->company_name','$d->skills','$d->link', $cid, '$d->publishedOn')";
     $count++;
-}
-if(mysqli_query($mysqli, $query)) echo "Data Saved Successfully";
+}if(mysqli_query($mysqli, $query)) echo "Data Saved Successfully";
 else echo "Failed";
